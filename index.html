@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./images/favi2.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./images/favi2.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
   <title>Airbnb | Inicio</title>
 </head>
+
 <body>
-  <header class="navbar navbar-expand-lg navbar-light bg-light">
-    <img style="height: 60px; width: 150px; padding: 10px;" src="./images/loglat.png" alt="">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.airbnb.com.ar/?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&search_mode=flex_destinations_search&flexible_trip_lengths%5B%5D=one_week&location_search=MIN_MAP_BOUNDS&monthly_start_date=2023-07-01&monthly_length=3&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&category_tag=Tag%3A8173&search_type=category_change">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.airbnb.com.ar/?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&search_mode=flex_destinations_search&flexible_trip_lengths%5B%5D=one_week&location_search=MIN_MAP_BOUNDS&monthly_start_date=2023-07-01&monthly_length=3&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&search_type=category_change&category_tag=Tag%3A789">Explorar</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.airbnb.mx/resources/hosting-homes/t/get-started-hosting-2">Hospedar</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.airbnb.mx/login">Iniciar sesión</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.airbnb.mx/login">Registrarse</a>
-        </li>
-      </ul>
+
+  <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./images/loglat.png" alt="Airbnb logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Explorar</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Hospedar</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Iniciar sesión</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Registrarse</a></li>
+        </ul>
+      </div>
     </div>
   </header>
 
-  <section class="hero">
+
+  <section class="hero d-flex align-items-center">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-6 col-md-8">
           <h1>Descubre alojamientos únicos y experiencias en todo el mundo</h1>
           <p>Explora casas, apartamentos y mucho más en cualquier lugar del mundo.</p>
+
+         
           <form>
-            <div class="form-row">
-              <div class="col">
-                <input type="text" class="form-control" placeholder="¿A dónde viajas?">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-3 mb-2">
+                <input type="text" class="form-control" placeholder="¿A dónde viajas?" />
               </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Fecha de llegada">
+              <div class="col-12 col-sm-6 col-md-3 mb-2">
+                <input type="text" class="form-control" placeholder="Llegada" />
               </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Fecha de salida">
+              <div class="col-12 col-sm-6 col-md-3 mb-2">
+                <input type="text" class="form-control" placeholder="Salida" />
               </div>
-              <div class="col">
-                <button type="submit" class="btn btn-primary">Buscar</button>
+              <div class="col-12 col-sm-6 col-md-3 mb-2">
+                <button type="submit" class="btn btn-primary btn-block">Buscar</button>
               </div>
             </div>
           </form>
@@ -64,29 +72,31 @@
 
   <section class="explore">
     <div class="container">
-      <h2>Explora alojamientos en todo el mundo</h2>
+      <h2 class="text-center mb-5">Explora alojamientos en todo el mundo</h2>
       <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="./images/fr.jpeg" class="card-img-top" alt="...">
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="./images/fr.jpeg" class="card-img-top" alt="París" />
             <div class="card-body">
               <h5 class="card-title">París, Francia</h5>
               <p class="card-text">Hermoso apartamento en el centro de París.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="./images/ny.jpeg" class="card-img-top" alt="...">
+
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="./images/ny.jpeg" class="card-img-top" alt="Nueva York" />
             <div class="card-body">
               <h5 class="card-title">Nueva York, EE. UU.</h5>
               <p class="card-text">Cómodo loft en el corazón de Manhattan.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="./images/jp.webp" class="card-img-top" alt="...">
+
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="./images/jp.webp" class="card-img-top" alt="Tokio" />
             <div class="card-body">
               <h5 class="card-title">Tokio, Japón</h5>
               <p class="card-text">Tradicional casa japonesa con jardín zen.</p>
@@ -98,8 +108,8 @@
   </section>
 
   <footer class="footer">
-    <div class="container">
-      <span class="text-muted">&copy; 2021 Airbnb. Todos los derechos reservados.</span>
+    <div class="container text-center">
+      <span class="text-muted">&copy; 2025 Airbnb Clone. Todos los derechos reservados.</span>
     </div>
   </footer>
 
